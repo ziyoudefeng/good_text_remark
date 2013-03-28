@@ -1,0 +1,4 @@
+for (init-statement; condition; expression) {
+  statement
+}
+expression通常用来更改两种对象的值。一个是init-statement中被初始化的对象，另一个是在condition中被检验的对象。
