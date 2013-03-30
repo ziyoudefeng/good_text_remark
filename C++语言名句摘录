@@ -7,7 +7,8 @@ expression通常用来更改两种对象的值。一个是init-statement中被�
 2.
 pointer和reference参数二者之间差别：
   1 C++不允许改变reference所代表的对象，两者的用法不同：pointer需要提领
-  2 pointer可能（也可能不）指向某个实际对象。当我们提领pointer时，一定要先确定其值并非为0。至于reference则必定会代表某个对象，所以不须做此检查。
+  2 pointer可能（也可能不）指向某个实际对象。当我们提领pointer时，一定要先确定其值并非为0。至于reference则必定会代表某个对象，
+所以不须做此检查。
 
 3.
 一般来说，除非你希望在函数内更改参数值，否则不建议在传递内奸型别时使用传址方式。传址机制主要是作为传递class objects之用。
