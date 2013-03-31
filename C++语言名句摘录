@@ -23,3 +23,9 @@ C++允许我们为所有参数或部分参数设定默认值。有两个规定�
 但如果答案是否定，我们就必须另行定义copy constructor，并在其中撰写正确的初始化操作。
 
 如果有必要为某个class撰写copy constructor，那么同样有必要为它撰写copy assignment operator。
+
+6.
+欲以一个对象复制出另一个对象，先确定两个对象是否相同是个好习惯。
+  if (this != rhs) {
+    ...
+  }
