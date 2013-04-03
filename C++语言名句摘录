@@ -35,3 +35,6 @@ C++允许我们为所有参数或部分参数设定默认值。有两个规定�
   reference永远无法代表空对象，pointer却有可能是null。让它成为reference，我们就再也不必检查它是否为null了。
   data member如果是个reference，则必须在constructor的memeber initialization list中加以初始化。一旦初始化后，就再也无法指向另一个对象。
 如果data member是个pointer，就无此限制：我们可以在constructor内加以初始化，也可以先将它初始化为null，稍后再令它指向某个有效的内存地址。
+
+8.
+基类如果是个抽象类，就把基类的constructor声明为protected而非public。这样可以防止定义基类对象。
