@@ -10,3 +10,9 @@ assignment运算符认定其参数是合法的，反倒是它会侦测诸如“�
 2.
 class 里面的pointer member需注意一下几点：
     1.在每一个constructors中将该指针初始化。如果没有任何一个constructor会将内存配置给该指针，
+
+
+3.
+    如果你的class拥有任何指针，那么请撰写你自己的copy constructor和assignment operator。
+    当肯定不会用到copy constructor和assignment operator时，把这些函数声明为private，并且不要定义（实现）之。这可以阻止clients调用它们，
+也可以避免编译器产生它们。
